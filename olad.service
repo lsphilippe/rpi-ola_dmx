@@ -1,7 +1,7 @@
 
 [Unit]
 Description=OLA Deamon 
-After=multi-user.target
+After=network-online.target
 
 [Service]
 Type=simple
@@ -9,4 +9,4 @@ User=pi
 ExecStart=/bin/bash /home/pi/ola.sh 
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=network-online.target
