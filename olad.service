@@ -1,0 +1,12 @@
+
+[Unit]
+Description=OLA Deamon 
+After=multi-user.target
+
+[Service]
+Type=simple
+User=pi
+ExecStart=/bin/bash /home/pi/ola.sh 
+
+[Install]
+WantedBy=multi-user.target
